@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TOC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+    <!-- Application Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <style>
+        .red-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 align='center'>Language Type Detection</h1>
+        <div class="row">
+            <form onsubmit="processFormInformation();return false;" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="variables" type="text" class="validate">
+                        <label for="variables">Variables</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="terminals" type="text" class="validate">
+                        <label for="terminals">Terminals</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea rows="4" id="production_rules" class="materialize-textarea"></textarea>
+                        <label for="production_rules">Production Rules</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class='red-text' id='response'></div>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./sw.js').then(function (registration) {
+                    return registration;
+                }).catch(function (Error) {
+                    console.log('ServiceWorker registration failed: ', Error);
+                });
+            });
+        }
+
+        function processFormInformation() {
+            sendResponse = document.getElementById("response");
+            formVariablesString = document.getElementById("variables").value;
+            var variables = formVariablesString.split(',');
+            formTerminalsString = document.getElementById("terminals").value;
+            var terminals = formTerminalsString.split(',');
+            formProductionRulesString = document.getElementById("production_rules").value;
+            var productionRules = formProductionRulesString.split(',');
+
+            // Check Chomsky Heirarchy, Spit the langauge's type!
+            var langaugeType = 3
+
+            // Check Only Type 3
+            for (index in productionRules) {
+                rule = productionRules[index];
+                equalPoint = rule.indexOf('=');
+                if (variables.indexOf(rule[equalPoint + 1]) > -1 && variables.indexOf(rule[rule.length - 1]) > -1) {
+                    langaugeType = 2;
+                    break;
+                }
+                for (index = 0; index < equalPoint; index++) {
+                    if (terminals.indexOf(rule[index]) > -1) {
+                        langaugeType = 2;
+                        break;
+                    }
+                }
+                if (langaugeType != 3)
+                    break;
+            }
+
+            if (langaugeType == 3) {
+                sendResponse.innerHTML = "Type " + String(langaugeType) + " Language";
+                console.log("Type " + String(langaugeType) + " Language");
+                return false;
+            }
+
+            // Check Only Type 2
+            for (index in productionRules) {
+                rule = productionRules[index];
+                if (terminals.indexOf(rule[0]) > -1 || rule[1] != '=')
+                    langaugeType = 1;
+            }
+
+            if (langaugeType == 2) {
+                sendResponse.innerHTML = "Type " + String(langaugeType) + " Language";
+                console.log("Type " + String(langaugeType) + " Language");
+                return false;
+            }
+
+            // Check Only Type 1
+            for (index in productionRules) {
+                rule = productionRules[index];
+                equalPoint = rule.indexOf('=');
+                if (equalPoint == 0 || equalPoint * 2 >= rule.length)
+                    langaugeType = 0;
+            }
+            sendResponse.innerHTML = "Type " + String(langaugeType) + " Language";
+            console.log("Type " + String(langaugeType) + " Language")
+            return false;
+        }
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+</body>
+
+</html>

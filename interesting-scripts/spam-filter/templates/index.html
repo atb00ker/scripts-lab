@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spam Filter Frontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .d-none {
+            display: none;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Spam Filter</h2>
+
+
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#LogisticRegression">Logistic Regression</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#NaiveBayes">Naive Bayes</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#LinearSVC">SVM</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="LogisticRegression" class="tab-pane fade in active">
+                <h3>Logistic Regression</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="comment_LogisticRegression">Enter Text:</label>
+                        <textarea class="form-control" rows="5" id="comment_LogisticRegression"></textarea>
+                    </div>
+                    Accuracy: {{ LogisticRegressionModelAccuracy }}
+                    <br>
+                    <br>
+                    <button type="button" onclick='getPrediction("LogisticRegression")' class="btn btn-primary">Check</button>
+                    <button type="button" id='result_btn_LogisticRegression' class="d-none"></button>
+                </form>
+            </div>
+
+            <div id="NaiveBayes" class="tab-pane fade in">
+                <h3>Naive Bayes</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="comment_NaiveBayes">Enter Text:</label>
+                        <textarea class="form-control" rows="5" id="comment_NaiveBayes"></textarea>
+                    </div>
+                    Accuracy: {{ NaiveBayesModelAccuracy }}
+                    <br>
+                    <br>
+                    <button type="button" onclick='getPrediction("NaiveBayes")' class="btn btn-primary">Check</button>
+                    <button type="button" id='result_btn_NaiveBayes' class="d-none"></button>
+                </form>
+            </div>
+
+            <div id="LinearSVC" class="tab-pane fade in">
+                <h3>SVM</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="comment_LinearSVC">Enter Text:</label>
+                        <textarea class="form-control" rows="5" id="comment_LinearSVC"></textarea>
+                    </div>
+                    Accuracy: {{ LinearSVCModelAccuracy }}
+                    <br>
+                    <br>
+                    <button type="button" onclick='getPrediction("LinearSVC")' class="btn btn-primary">Check</button>
+                    <button type="button" id='result_btn_LinearSVC' class="d-none"></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function getPrediction(Model) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    result_btn_container = document.getElementById("result_btn_" + Model);
+                    if (this.responseText == "spam") {
+                        result_btn_container.innerHTML = 'Spam';
+                        result_btn_container.className = 'btn btn-danger';
+                    } else {
+                        result_btn_container.innerHTML = 'Ham';
+                        result_btn_container.className = 'btn btn-success';
+                    }
+                }
+            };
+            var parameters = {};
+            parameters.model = Model;
+            parameters.question = document.getElementById("comment_" + Model).value;
+            xhttp.open("POST", "/prediction", true);
+            xhttp.setRequestHeader('Content-Type', 'application/json');
+            xhttp.send(JSON.stringify(parameters));
+        }
+    </script>
+</body>
+
+</html>

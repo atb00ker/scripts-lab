@@ -1,0 +1,42 @@
+{
+    "name": "Theory of Computation",
+    "short_name": "ToC",
+    "display": "standalone",
+    "lang": "en-US",
+    "start_url": "./index.html",
+    "description": "ToC Project",
+    "theme_color": "#5e8fca",
+    "background_color": "#5e8fca",
+    "icons": [
+        {
+            "src": "assets/images/icons/128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "assets/images/icons/144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "assets/images/icons/152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "assets/images/icons/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/images/icons/250.png",
+            "type": "image/png",
+            "sizes": "250x250"
+        },
+        {
+            "src": "assets/images/icons/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Search engine optimisatin -->
+    <meta name="description" content="GSoC Research Helper, Look for the organizations in a tabular view, filter organizations.">
+    <meta name="keywords" content="GSoC, Research, Filter GSoC organizations">
+    <meta name="author" content="atb00ker">
+    <!-- End Search Engine Optimisation -->
+    <!-- Browser tab theme color for Chrome on Android -->
+    <meta name="theme-color" content="#000">
+    <title>Google Summer of Code</title>
+    <!-- Site favicon -->
+    <link href="assets/images/navLogo.png" rel="shortcut icon">
+    <link href="assets/images/navLogo.png" rel="apple-touch-icon">
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css" integrity="sha256-eU4xmpfQx1HSi5q1q2rHNcMEzTNJov7r2Wr/6zF3ANc="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font Awesome Styles -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto+Condensed|Lobster|Aladin" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/user/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="absolute-center">
+        <h1 align='center'>Google Summer of Code</h1>
+        <div class="table-responsive">
+            <table id="orgTable"></table>
+        </div>
+    </div>
+    <!-- Scripts -->
+
+    <!-- JQuery Script(s) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Test Script(s) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+    <!-- Functionality Script(s) -->
+    <script> var organizations = [] </script>
+    <script type="text/javascript" src="assets/data/organizations.js"></script>
+    <script src="assets/js/user/functions.js" defer></script>
+</body>
+
+</html>
