@@ -1,0 +1,18 @@
+echo "The Fibonacci"
+echo -n "Enter the limit: "
+read n
+a=0
+b=1
+
+echo -n "$a $b"
+    while (( a+b<=n ))
+        do
+        a=$(expr $a + $b)
+        echo -n " $a"
+        if (( a+b<=n ))
+            then
+            b=$(expr $a + $b)
+            echo -n " $b"
+        fi
+    done
+echo " "

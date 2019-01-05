@@ -1,0 +1,30 @@
+DNS => UDP 53
+FTP TCP 21
+Pop3 110
+telnet 23
+
+Socket
+Bind 
+Accept
+Listen
+Connect
+Send
+Receive
+Close
+
+PF_INET
+ITU = international territraffic
+AMSI
+TRAI
+
+Varthiratri
+
+int sockid = socket(family, type, protocol)# C
+netstat to check about ports.
+int status = bind(sockid, &addrport,size);
+
+struck socket (PR_INET, SOCK_STREAM, 0);
+addrport.sin.family = AF_INET;
+addr.port.sin_port = htons(5100);
+addrport.sin_addr = htonl(INADDR_ANY);
+if (bind(sockid, (struct sockadddr * & addrport, sizeof(addport)) != -1) { ... }

@@ -1,0 +1,12 @@
+echo "The Factorial"
+echo -n "Enter a number: "
+read r
+f=1
+
+while [ $r -gt 0 ]
+    do
+    f=$(expr $f \* $r)
+    r=$(expr $r - 1)
+    done
+
+echo "Your Factorial: $f"
