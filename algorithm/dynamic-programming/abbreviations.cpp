@@ -1,48 +1,52 @@
 // Question : https: //www.hackerrank.com/challenges/abbr/problem
 
-#include <iostream>
-#include <string.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-// O(n) with score 6/14
 string abbreviation(string a, string b)
 {
-    int i, j, flag;
-    i = j = flag = 0;
-
+    if (b.empty())
+    {
+        while (!a.empty() && islower(a[0]))
+            a.erase(a.begin());
+        if (a.empty())
+            return "YES";
+    }
     if (a.empty() && b.empty())
         return "YES";
-    if ((a.length() < b.length()) || a.empty() || b.empty())
+    if (a.empty() || (a.length() < b.length()))
         return "NO";
 
-    for (i = 0; b[i] != '\0'; i++)
+    while (!a.empty() && islower(a[0]) != 0 && toupper(a[0]) != b[0])
+        a.erase(a.begin());
+
+    if (a.empty() || (a.length() < b.length()))
+        return "NO";
+
+    if (isupper(a[0]))
     {
-        flag = 0;
-        for (; a[j] != '\0'; j++)
-        {
-            if (toupper(a[j]) == b[i])
-            {
-                flag = 1;
-                j++;
-                break;
-            }
-            if (isupper(a[j]))
-                return "NO";
-        }
-        if (flag == 0)
+        if (a[0] != b[0])
             return "NO";
+        a.erase(a.begin());
+        b.erase(b.begin());
+        if (abbreviation(a, b) == "YES")
+            return "YES";
+        return "NO";
     }
-    for (; a[j] != '\0'; j++)
-    {
-        if (a[j] < 97)
-            return "NO";
-    }
-    return "YES";
+    a.erase(a.begin());
+    if (abbreviation(a, b) == "YES")
+        return "YES";
+    b.erase(b.begin());
+    if (abbreviation(a, b) == "YES")
+        return "YES";
+    return "NO";
 }
 
 int main()
 {
-    cout << abbreviation("aBbdD", "BBD");
+    // cout << abbreviation("AbdBD", "ABD");
+    // cout << abbreviation("AfPZN", "APZNC");
+    cout << abbreviation("daBcd", "ABC");
     return 0;
 }
