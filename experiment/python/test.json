@@ -1,0 +1,1 @@
+{"type": "DeviceConfiguration", "general": {"hostname": "RouterA"}, "interfaces": {"name": "eth0", "type": "ethernet", "addresses": [{"address": "192.168.1.1", "proto": "static", "mask": 24, "family": "ipv4"}]}}
