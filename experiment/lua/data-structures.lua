@@ -53,7 +53,7 @@ end
 
 interfaceString =
   [[{
-    "name": "%s,
+    "name": "%s",
     "uptime": %d,
     "statistics": {
       "collisions": %d,
