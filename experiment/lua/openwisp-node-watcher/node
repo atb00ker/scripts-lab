@@ -1,0 +1,19 @@
+#!/bin/sh
+
+
+case "$1" in
+	list)
+		echo '{ "rlua": { }, "hello": { } }'
+	;;
+	call)
+		case "$2" in
+			rlua)
+				lua /root/node-uci.lua
+			;;
+			hello)
+				echo '{ "hello": "world" }'
+			;;
+		esac
+	;;
+esac
+
