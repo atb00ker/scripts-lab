@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: openwisp
+spec:
+  template:
+    metadata:
+      labels:
+        app: openwisp
+    spec:
+      containers:
+      - name: openwisp-web
+        image: atb00ker/ready-to-run:openwisp-web
+        command: ["/opt/openwisp2/init_command.sh"]
+        ports:
+          - containerPort: 8000
+        env:
+          - name: DJANGO_REDIS_HOST
+            value: "localhost"
+          - name: DJANGO_DEBUG
+            value: "True"
+      - name: redis
+        image: redis:alpine

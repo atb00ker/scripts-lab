@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    build: .
+    image: ${DOCKER_IMAGE}
+    command: /opt/openwisp2/init_command.sh
+    deploy:
+      replicas: 2
+    ports:
+      - "8000:8000"
+    environment:
+     - DJANGO_REDIS_HOST=${DJANGO_REDIS_HOST}
+     - DJANGO_DEBUG=${DJANGO_DEBUG}
+    links:
+      - redis
+  redis:
+    image: redis:alpine
+    deploy:
+      replicas: 1
+    ports:
+      - "6379:6379"
