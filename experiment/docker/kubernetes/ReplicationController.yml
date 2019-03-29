@@ -18,7 +18,5 @@ spec:
         env:
           - name: DJANGO_REDIS_HOST
             value: "localhost"
-          - name: DJANGO_DEBUG
-            value: "True"
       - name: redis
         image: redis:alpine

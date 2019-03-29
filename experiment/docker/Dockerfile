@@ -8,6 +8,9 @@ RUN wget http://download.osgeo.org/geos/geos-3.7.1.tar.bz2 && tar xjf geos-3.7.1
 COPY ./data/ /opt/openwisp2/
 RUN pip install -r requirements.txt
 
+ENV DJANGO_REDIS_HOST redis
+ENV DJANGO_DEBUG False
+
 RUN chmod +x /opt/openwisp2/init_command.sh
 
 EXPOSE 8000

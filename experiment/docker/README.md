@@ -4,20 +4,15 @@
 2. Tested horizontal scaling with docker swarm & kubernetes.
 
 ### Environment Variables:
-These environement variables must be set before using docker-compose.
+
+For customization, you may change any of the following variables at run time using docker-compose file or build another image with the changed values using the dockerfile.
 
 ```
 <var>=<default>
-DOCKER_IMAGE=atb00ker/ready-to-run:openwisp-web
-DJANGO_REDIS_HOST=localhost
-DJANGO_DEBUG=True
+DJANGO_REDIS_HOST=redis
+DJANGO_DEBUG=False
 ```
-You can simply edit the `.env` file to achieve this.
 
-Note: (For pipenv users) `.env` is a special file in pipenv as well 
-so, simply changing this file wouldn't work. You'll need to set these variables
-in environement variables of your terminal terminal.
-You can simply write a file with environement variables and use a command like 
-`export $(cat config/kubes.env | xargs)` to change the values.
+### How to run:
 
 You can run the containers with `docker-compose up`. When the containers are ready, you should see OpenWISP Admin Interface on `127.0.0.1:8000/admin`. Default USER & PASS are `admin`.
