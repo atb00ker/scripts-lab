@@ -1,3 +1,6 @@
 local/
 .vscode/
 .vagrant/
+.terraform/
+*.tfstate
+*.tfstate.backup

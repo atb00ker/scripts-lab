@@ -3,6 +3,7 @@ kind: ReplicationController
 metadata:
   name: openwisp
 spec:
+  replicas: 3
   template:
     metadata:
       labels:
