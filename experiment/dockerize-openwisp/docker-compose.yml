@@ -1,0 +1,28 @@
+version: "3"
+services:
+  controller:
+    build: openwisp-controller
+    image:  ${OPENWISP_CONTROLLER_IMAGE}
+    deploy:
+      replicas: 2
+    ports:
+      - "8000:8000"
+    links:
+      - redis
+    environment:
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+  network:
+    build: openwisp-network-topology
+    image: ${OPENWISP_NETWORK_TOPOLOGY_IMAGE}
+    deploy:
+      replicas: 1
+    ports:
+      - "8001:8001"
+    environment:
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+  redis:
+    image: redis:alpine
+    deploy:
+      replicas: 1
+    ports:
+      - "6379:6379"
