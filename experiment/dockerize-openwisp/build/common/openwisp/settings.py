@@ -8,50 +8,9 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ['DJANGO_DEBUG'])
-REDIS_HOST = os.environ['DJANGO_REDIS_HOST']
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.environ['DJANGO_ALLOWED_HOSTS'].split(",")
 
-# Application definition
-
-INSTALLED_APPS = [
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.gis',
-    # openwisp admin theme
-    # (must be loaded here)
-    'openwisp_utils.admin_theme',
-    # all-auth
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'django_extensions',
-    # openwisp modules
-    'openwisp_users',
-    'openwisp_controller.pki',
-    'openwisp_controller.config',
-    'openwisp_controller.geo',
-    # admin
-    'django.contrib.admin',
-    'django.forms',
-    # other dependencies
-    'sortedm2m',
-    'reversion',
-    'leaflet',
-    'rest_framework',
-    'rest_framework_gis',
-    'channels',
-]
-
-EXTENDED_APPS = [
-    'django_netjsonconfig',
-    'django_x509',
-    'django_loci',
-]
 
 AUTH_USER_MODEL = 'openwisp_users.User'
 SITE_ID = 1
@@ -76,18 +35,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'openwisp.urls'
 
-CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'asgi_redis.RedisChannelLayer',
-        'CONFIG': {'hosts': [(REDIS_HOST, 6379)]},
-        'ROUTING': 'openwisp_controller.geo.channels.routing.channel_routing',
-    },
-}
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'OPTIONS': {
             'loaders': [
                 ('django.template.loaders.cached.Loader', [
@@ -106,36 +58,21 @@ TEMPLATES = [
     },
 ]
 
-# FOR DJANGO REDIS
-
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://"+REDIS_HOST+":6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
-
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-SESSION_CACHE_ALIAS = "default"
-
-FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
 
 WSGI_APPLICATION = 'openwisp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
-        'NAME': '/opt/openwisp/db.sqlite3',
-    }
+        'ENGINE': os.environ['PG_ENGINE'],
+        'NAME': os.environ['PG_NAME'],
+        'USER': os.environ['PG_USER'],
+        'PASSWORD': os.environ['PG_PASS'],
+        'HOST': os.environ['PG_HOST'],
+        'PORT': os.environ['PG_PORT']
+    },
 }
-
-SPATIALITE_LIBRARY_PATH = 'mod_spatialite.so'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -150,8 +87,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-gb'
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = os.environ['DJANGO_LANGUAGE_CODE']
+TIME_ZONE = os.environ['DJANGO_TIME_ZONE']
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -164,14 +101,12 @@ MEDIA_ROOT = '%s/media' % BASE_DIR
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-
-# django x509 settings
-DJANGO_X509_DEFAULT_CERT_VALIDITY = 1825
-DJANGO_X509_DEFAULT_CA_VALIDITY = 3650
-
+EMAIL_PORT = os.environ['DJANGO_EMAIL_PORT']
+EMAIL_BACKEND = os.environ['DJANGO_EMAIL_BACKEND']
 
 # Set default email
-DEFAULT_FROM_EMAIL = 'atb00ker@openwisp.test'
+DEFAULT_FROM_EMAIL = os.environ['DJANGO_DEFAULT_FROM_EMAIL']
+
 # See http://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
 LOGGING = {
@@ -224,3 +159,8 @@ LOGGING = {
         ]
     }
 }
+
+try:
+    from openwisp.module_settings import *
+except ImportError:
+    pass

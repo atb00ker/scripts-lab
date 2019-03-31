@@ -18,4 +18,4 @@ if User.objects.filter(is_superuser=True).count() < 1:
     admin = User.objects.create_superuser(username='admin',
                                           password='admin',
                                           email='')
-    print('superuser created')
+    print('Superuser created')
