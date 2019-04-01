@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: ReplicationController
 metadata:
@@ -15,12 +16,11 @@ spec:
         image: atb00ker/ready-to-run:openwisp-controller
         ports:
           - containerPort: 8000
-        env:
-          - name: DJANGO_REDIS_HOST
-            value: "localhost"
-        env:
-          - name: DJANGO_SECRET_KEY
-            value: "MY_COMPANY_SECRET_KEY"
+        envFrom:
+          - configMapRef:
+              name: common-config
+          - configMapRef:
+              name: controller-config
       - name: redis
         image: redis:alpine
 ---
@@ -41,9 +41,9 @@ spec:
         imagePullPolicy: "Always"
         ports:
           - containerPort: 8001
-        env:
-          - name: DJANGO_SECRET_KEY
-            value: "MY_COMPANY_SECRET_KEY"
+        envFrom:
+          - configMapRef:
+              name: common-config
 ---
 apiVersion: v1
 kind: ReplicationController
@@ -62,9 +62,9 @@ spec:
         imagePullPolicy: "Always"
         ports:
           - containerPort: 8002
-        env:
-          - name: DJANGO_SECRET_KEY
-            value: "MY_COMPANY_SECRET_KEY"
+        envFrom:
+          - configMapRef:
+              name: common-config
 ---
 apiVersion: v1
 kind: ReplicationController
@@ -83,9 +83,10 @@ spec:
         imagePullPolicy: "Always"
         ports:
           - containerPort: 8003
-        env:
-          - name: DJANGO_SECRET_KEY
-            value: "MY_COMPANY_SECRET_KEY"
+        envFrom:
+          - configMapRef:
+              name: common-config
+
 ---
 apiVersion: v1
 kind: ReplicationController
@@ -100,7 +101,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: postgres:10.4
+          image: postgres:10-alpine
           imagePullPolicy: "IfNotPresent"
           ports:
             - containerPort: 5432
