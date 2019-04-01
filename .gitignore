@@ -4,3 +4,5 @@ local/
 .terraform/
 *.tfstate
 *.tfstate.backup
+media/
+

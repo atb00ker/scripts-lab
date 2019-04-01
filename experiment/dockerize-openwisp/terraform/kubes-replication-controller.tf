@@ -50,6 +50,8 @@ resource "kubernetes_replication_controller" "openwisp-controller" {
       }
     }
   }
+
+  depends_on = ["kubernetes_replication_controller.postgres"]
 }
 
 resource "kubernetes_replication_controller" "openwisp-radius" {
@@ -93,6 +95,8 @@ resource "kubernetes_replication_controller" "openwisp-radius" {
       }
     }
   }
+
+  depends_on = ["kubernetes_replication_controller.postgres"]
 }
 
 resource "kubernetes_replication_controller" "openwisp-network-topology" {
@@ -136,6 +140,8 @@ resource "kubernetes_replication_controller" "openwisp-network-topology" {
       }
     }
   }
+
+  depends_on = ["kubernetes_replication_controller.postgres"]
 }
 
 resource "kubernetes_replication_controller" "openwisp-dashboard" {
@@ -179,6 +185,8 @@ resource "kubernetes_replication_controller" "openwisp-dashboard" {
       }
     }
   }
+
+  depends_on = ["kubernetes_replication_controller.postgres"]
 }
 
 resource "kubernetes_replication_controller" "postgres" {
@@ -235,4 +243,6 @@ resource "kubernetes_replication_controller" "postgres" {
       }
     }
   }
+
+  depends_on = ["kubernetes_persistent_volume.postgres-pv-volume", "kubernetes_persistent_volume_claim.postgres-pv-claim"]
 }

@@ -44,4 +44,6 @@ resource "kubernetes_persistent_volume_claim" "postgres-pv-claim" {
       }
     }
   }
+
+  depends_on = ["kubernetes_persistent_volume.postgres-pv-volume"]
 }
