@@ -29,8 +29,8 @@ ENV DJANGO_X509_DEFAULT_CA_VALIDITY 3650
 ENV DJANGO_DEFAULT_FROM_EMAIL example@email.com
 ENV DJANGO_SECRET_KEY DEFAULT_BAD_KEY
 ENV DJANGO_EMAIL_PORT 1025
+ENV DJANGO_EMAIL_BACKEND django.core.mail.backends.console.EmailBackend
 ENV CONTAINER_PORT ${CONTAINER_PORT}
-
 COPY ./common/ /opt/openwisp/
 COPY ./openwisp_controller/module_settings.py /opt/openwisp/openwisp/module_settings.py
 COPY ./openwisp_controller/urls.py /opt/openwisp/openwisp/urls.py
