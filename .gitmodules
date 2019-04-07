@@ -1,0 +1,3 @@
+[submodule "experiment/docker/dockerize-openwisp"]
+	path = experiment/docker/dockerize-openwisp
+	url = git@github.com:atb00ker/dockerize-openwisp.git

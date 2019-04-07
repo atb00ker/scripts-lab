@@ -1,6 +1,0 @@
-openwisp-controller 
-openwisp-users 
-openwisp-utils 
-asgi_redis 
-service_identity 
-django-redis
