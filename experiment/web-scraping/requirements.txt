@@ -59,7 +59,7 @@ service-identity==16.0.0
 setproctitle==1.1.8
 six==1.10.0
 Twisted==16.0.0
-urllib3==1.22
+urllib3==1.24.2
 uTidylib==0.2
 virtualenv==15.1.0
 w3lib==1.18.0
