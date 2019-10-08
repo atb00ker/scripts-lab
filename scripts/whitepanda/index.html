@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="white nav-wrapper">
+            <div class="container">
+                <a href="#"><img class="brand-logo" src="http://www.whitepanda.in/img/full_logo_white.png"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><i class="material-icons">notifications_none</i></li>
+                    <li id='user'>AB</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="header" class="row">Content Store</div>
+        <div id='header-card' class="row">
+            <div class="card">
+                <div class="col s9">
+                    <div class="card-content">
+                        <span class="card-title">Got bulk orders or almost similar orders? Fill the order brief in an
+                            excel sheet</span>
+                        <p>If you're wondering about an easy way to place orders in large numbers, we provide a way
+                            customized just for that.
+                            <br>
+                            Download our excel sheet, and fill the order brief in the prescribed format and submit.
+                            <a href='#'><u>In case you need any help,
+                                    we are just a click away to assist you in placing your order.</u></a></p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Order via Excel Sheet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="content-card card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class='col s3'>
+                                <span>
+                                    <img class='content-image'
+                                        src='https://kurzgesagt.org/wp-content/themes/kurzgesagt/library/images/logo.gif'>
+                                </span>
+                            </div>
+                            <div class='col s9'>
+                                <span class="blog-title">Blog / Article</span>
+                            </div>
+                            <div class='col s9'>
+                                <span class="price">From ₹500</span>
+                            </div>
+                            <div class='col s12'>
+                                <div class="blog-content ">
+                                    Typically 450-400 words, an e-book is perfect for your target audidence ranging from
+                                    prospective customers to users.
+                                </div>
+                            </div>
+                            <div class='col s12'>
+                                <div class="blog-action">
+                                    <a href="#">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul id="nav-mobile" class="sidenav sidenav-fixed">
+            <li onclick="addFocus(this)" style="margin-top: 100px;" class="icon-side">
+                <svg width="33px" height="33px" viewBox="0 0 24 24">
+                    <path id="fill-color"
+                        d="M6.5,14.5 L6.5,17.5 L9.5,17.5 L9.5,14.5 L6.5,14.5 Z M6,13 L10,13 C10.5522847,13 11,13.4477153 11,14 L11,18 C11,18.5522847 10.5522847,19 10,19 L6,19 C5.44771525,19 5,18.5522847 5,18 L5,14 C5,13.4477153 5.44771525,13 6,13 Z M6.5,6.5 L6.5,9.5 L9.5,9.5 L9.5,6.5 L6.5,6.5 Z M6,5 L10,5 C10.5522847,5 11,5.44771525 11,6 L11,10 C11,10.5522847 10.5522847,11 10,11 L6,11 C5.44771525,11 5,10.5522847 5,10 L5,6 C5,5.44771525 5.44771525,5 6,5 Z M14.5,14.5 L14.5,17.5 L17.5,17.5 L17.5,14.5 L14.5,14.5 Z M14,13 L18,13 C18.5522847,13 19,13.4477153 19,14 L19,18 C19,18.5522847 18.5522847,19 18,19 L14,19 C13.4477153,19 13,18.5522847 13,18 L13,14 C13,13.4477153 13.4477153,13 14,13 Z M14.5,6.5 L14.5,9.5 L17.5,9.5 L17.5,6.5 L14.5,6.5 Z M14,5 L18,5 C18.5522847,5 19,5.44771525 19,6 L19,10 C19,10.5522847 18.5522847,11 18,11 L14,11 C13.4477153,11 13,10.5522847 13,10 L13,6 C13,5.44771525 13.4477153,5 14,5 Z">
+                    </path>
+                </svg>
+            </li>
+            <li onclick="addFocus(this)"><i class="icon-side material-icons">search</i></li>
+            <li onclick="addFocus(this)"><i class="icon-side material-icons">store</li>
+        </ul>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        function addFocus(ele) {
+            var li = document.getElementsByTagName('li');
+            for (i = 0; i < li.length; i++) {
+                li[i].classList.remove('icon-side-active')
+            }
+            ele.classList.add('icon-side-active');
+        };
+        (function () {
+            var li = document.getElementsByTagName('li');
+            li[2].classList.add('icon-side-active');
+        })();
+    </script>
+
+</body>
+
+</html>
