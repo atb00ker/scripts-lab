@@ -1,6 +1,18 @@
+/******************************
+    Global
+******************************/
+
 body {
     background-color: #fdfdfd;
 }
+
+.container {
+    width: 80%;
+}
+
+/******************************
+    Navigation Section
+******************************/
 
 .sidenav {
     -webkit-box-shadow: 3px 0px 3px -1px rgba(0, 0, 0, 0.04);
@@ -9,23 +21,27 @@ body {
     width: 65px;
     transform: translateX(0px);
 }
+
 .brand-logo {
     filter: invert(1);
     margin-top: 15px;
     height: 26px;
 }
+
 nav {
     -webkit-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.1);
     height: 59px;
 }
+
 nav i {
     color: black;
     font-size: 29px!important;
     color: #838383;
     margin-right:10px;
 }
+
 @media only screen and (max-width: 992px) {
     .sidenav.sidenav-fixed {
         -webkit-transform: translateX(0%) !important;
@@ -37,6 +53,7 @@ nav i {
         transform: 0 !important;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .sidenav.sidenav-fixed {
         -webkit-transform: translateX(-105%) !important;
@@ -50,6 +67,7 @@ nav i {
         margin-left: 0;
     }
 }
+
 .icon-side {
     margin-left: 25%;
     padding-top: 10px;
@@ -59,13 +77,16 @@ nav i {
     color: #848484;
     fill: #848484;
 }
+
 .icon-side-active {
     border-right: #4db6ac 3px solid;
     fill: #80cbc4;
 }
+
 .icon-side-active i {
     color: #80cbc4;
 }
+
 #user {
     color: white;
     background: #b3e77f;
@@ -131,9 +152,27 @@ nav i {
     padding-bottom: 0;
 }
 
+.content-card:hover {
+    -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.19);
+}
+
 .content-image {
     border-radius: 50%;
     overflow: hidden;
+}
+
+.content-card:hover .content-image-container {
+    background-color: #3ebcb3;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 50%;
+}
+
+.content-card:hover .content-image {
+  opacity: 0;
 }
 
 .blog-title {
@@ -141,6 +180,10 @@ nav i {
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
+}
+
+.content-card:hover .blog-title {
+    color: #3ebcb3;
 }
 
 .price {
@@ -160,6 +203,7 @@ nav i {
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
 .blog-action a {
     margin-top: 10px;
     border: #4bdad0 2px solid;
@@ -171,3 +215,23 @@ nav i {
     font-size: 15px;
 }
 
+/******************************
+    Footer Section
+******************************/
+
+.footer {
+    color: #989898;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+#icon-tray{
+    font-size: 12px;
+}
+
+#link-tray a, u {
+    font-size: 14px;
+}
