@@ -6,3 +6,6 @@ local/
 *.tfstate.backup
 *.out
 media/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
