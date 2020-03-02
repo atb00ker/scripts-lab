@@ -9,3 +9,6 @@ media/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
+
+# Angular
+node_modules/
