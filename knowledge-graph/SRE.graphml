@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key attr.name="label" attr.type="string" for="node" id="label"/>
+<key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+<key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+<key attr.name="r" attr.type="int" for="node" id="r"/>
+<key attr.name="g" attr.type="int" for="node" id="g"/>
+<key attr.name="b" attr.type="int" for="node" id="b"/>
+<key attr.name="x" attr.type="float" for="node" id="x"/>
+<key attr.name="y" attr.type="float" for="node" id="y"/>
+<key attr.name="size" attr.type="float" for="node" id="size"/>
+<key attr.name="description" attr.type="string" for="node" id="description"/>
+<key attr.name="description" attr.type="string" for="edge" id="description"/>
+<graph edgedefault="directed">
+<node id="0">
+<data key="label">Site Reliability Engineering</data>
+<data key="description">Availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity</data>
+<data key="size">300.0</data>
+<data key="r">255</data>
+<data key="g">255</data>
+<data key="b">255</data>
+<data key="x">220.17664</data>
+<data key="y">-73.24527</data>
+</node>
+<node id="15">
+<data key="label">Time-based availability</data>
+<data key="description">uptime / (uptime + downtime)</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">992.0918</data>
+<data key="y">-295.33743</data>
+</node>
+<node id="16">
+<data key="label">Aggregate availability</data>
+<data key="description">successful requests / total requests</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">1306.2062</data>
+<data key="y">-82.55124</data>
+</node>
+<node id="17">
+<data key="label">Relevant Questions</data>
+<data key="description">1. What level of service will the users expect?
+2. Does this service tie directly to revenue?
+3. Is this a paid service, or is it free?
+4. If there are competitors in the marketplace, what level of service do those competitors provide?
+5. Is this service targeted at consumers, or at enterprises?
+6. Does it take a lot of effort to calculate the value of the SLO that matters to user? If yes, can there be an easier proxy?
+</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-223.10251</data>
+<data key="y">1056.4467</data>
+</node>
+<node id="18">
+<data key="label">Increasing Availability</data>
+<data key="description">1. Does the customer benefit from the increase?
+2. Is there a direct benefit of revenue from increase uptime?
+3. Does the decreased innovation and increased release time outwieght the increased uptime ?
+4. Does maintaining the increased uptime cost outwieght the revenue / user experience increase?</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">160.54909</data>
+<data key="y">1139.229</data>
+</node>
+<node id="19">
+<data key="label">Service tiers</data>
+<data key="description">Infrastructure requirements for SLO may depend on the application using it, some applications may require X from infrastructure and some other may require Y.
+In such a case optimisation can be done by providing different tiers of services.
+
+Example, Cloud Spanner provides immediate convergance and at an increased cost while big table provides eventual convergence at a decreased cost.
+
+</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">371.71198</data>
+<data key="y">926.50165</data>
+</node>
+<node id="1">
+<data key="label">Monitoring</data>
+<data key="description">#</data>
+<data key="size">100.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-125.86246</data>
+<data key="y">-533.3992</data>
+</node>
+<node id="2">
+<data key="label">Ops Quota</data>
+<data key="description">Limit of time SRE are allowed to spend on operations work. (example 50% / month)</data>
+<data key="size">100.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">1127.1702</data>
+<data key="y">264.1853</data>
+</node>
+<node id="3">
+<data key="label">Postmortem</data>
+<data key="description">Blame-free search for the core reason of an error</data>
+<data key="size">100.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">982.9899</data>
+<data key="y">476.52078</data>
+</node>
+<node id="4">
+<data key="label">Error budget</data>
+<data key="description">Maximum allowed service downtime (Example: 0.1% / Month)
+The core principle is that 100% reliablity is not required or needed as customer cannot notice it.</data>
+<data key="size">100.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">1002.5833</data>
+<data key="y">35.313908</data>
+</node>
+<node id="5">
+<data key="label">Alerts</data>
+<data key="description">Signify that a human needs to take action immediately in response to something that is either happening or about to happen, in order to improve the situation.</data>
+<data key="size">100.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-501.71005</data>
+<data key="y">-548.1344</data>
+</node>
+<node id="6">
+<data key="label">Tickets</data>
+<data key="description">Signify that a human needs to take action, but not immediately. The system cannot automatically handle the situation, but if a human takes action in a few days, no damage will result.</data>
+<data key="size">100.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-292.09668</data>
+<data key="y">-741.371</data>
+</node>
+<node id="7">
+<data key="label">Logging</data>
+<data key="description">No one needs to look at this information, but it is recorded for diagnostic or forensic purposes. The expectation is that no one reads logs unless something else prompts them to do so.</data>
+<data key="size">100.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-43.3199</data>
+<data key="y">-827.8274</data>
+</node>
+<node id="8">
+<data key="label">Capacity Planning</data>
+<data key="description">Estimate of requirement of resources according to organic(users) and inorganic(new users / new feature) expections from system.</data>
+<data key="size">100.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-96.46261</data>
+<data key="y">370.02945</data>
+</node>
+<node id="9">
+<data key="label">Service Level Objective</data>
+<data key="description">&lt;null value&gt;</data>
+<data key="size">100.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-57.81797</data>
+<data key="y">721.8955</data>
+</node>
+<node id="10">
+<data key="label">Service Level Indicator</data>
+<data key="size">100.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-499.62973</data>
+<data key="y">791.60834</data>
+</node>
+<node id="11">
+<data key="label">Service Level Agreement</data>
+<data key="size">100.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-544.6802</data>
+<data key="y">470.70084</data>
+</node>
+<node id="14">
+<data key="label">Principal</data>
+<data key="size">100.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">777.5956</data>
+<data key="y">169.23035</data>
+</node>
+<node id="20">
+<data key="label">Availability</data>
+<data key="description">&lt;null value&gt;</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-1015.70264</data>
+<data key="y">1509.0237</data>
+</node>
+<node id="21">
+<data key="label">User-facing Service</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-571.09973</data>
+<data key="y">1215.741</data>
+</node>
+<node id="22">
+<data key="label">latency</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-1321.3857</data>
+<data key="y">1400.0537</data>
+</node>
+<node id="23">
+<data key="label">throughput</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-636.9868</data>
+<data key="y">1576.9674</data>
+</node>
+<node id="24">
+<data key="label">Storage Services</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-1031.5875</data>
+<data key="y">930.2899</data>
+</node>
+<node id="25">
+<data key="label">Durability</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-1564.2389</data>
+<data key="y">1252.2462</data>
+</node>
+<node id="26">
+<data key="label">Big data Service</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">146</data>
+<data key="b">155</data>
+<data key="x">-803.46173</data>
+<data key="y">1081.9006</data>
+</node>
+<node id="27">
+<data key="label">Toil</data>
+<data key="description">Repetitive work that should be automated. https://landing.google.com/sre/sre-book/chapters/eliminating-toil/</data>
+<data key="size">110.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">736.63116</data>
+<data key="y">547.2671</data>
+</node>
+<edge id="0" source="1" target="0">
+<data key="weight">1.0</data>
+</edge>
+<edge id="1" source="5" target="1">
+<data key="weight">1.0</data>
+</edge>
+<edge id="2" source="6" target="1">
+<data key="weight">1.0</data>
+</edge>
+<edge id="5" source="9" target="8">
+<data key="weight">1.0</data>
+</edge>
+<edge id="4" source="7" target="1">
+<data key="weight">1.0</data>
+</edge>
+<edge id="6" source="10" target="8">
+<data key="weight">1.0</data>
+</edge>
+<edge id="7" source="8" target="11">
+<data key="weight">1.0</data>
+</edge>
+<edge id="8" source="8" target="0">
+<data key="weight">1.0</data>
+</edge>
+<edge id="9" source="4" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="10" source="2" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="11" source="3" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="12" source="14" target="0">
+<data key="weight">1.0</data>
+</edge>
+<edge id="13" source="15" target="4">
+<data key="weight">1.0</data>
+</edge>
+<edge id="14" source="16" target="4">
+<data key="weight">1.0</data>
+</edge>
+<edge id="15" source="17" target="9">
+<data key="weight">1.0</data>
+</edge>
+<edge id="17" source="18" target="9">
+<data key="weight">1.0</data>
+</edge>
+<edge id="18" source="19" target="9">
+<data key="weight">1.0</data>
+</edge>
+<edge id="19" source="19" target="9">
+<data key="weight">1.0</data>
+</edge>
+<edge id="23" source="23" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="24" source="22" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="22" source="20" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="25" source="22" target="24">
+<data key="weight">1.0</data>
+</edge>
+<edge id="26" source="20" target="24">
+<data key="weight">1.0</data>
+</edge>
+<edge id="27" source="25" target="24">
+<data key="weight">1.0</data>
+</edge>
+<edge id="28" source="26" target="22">
+<data key="weight">1.0</data>
+</edge>
+<edge id="29" source="26" target="23">
+<data key="weight">1.0</data>
+</edge>
+<edge id="30" source="24" target="10">
+<data key="weight">1.0</data>
+</edge>
+<edge id="31" source="26" target="10">
+<data key="weight">1.0</data>
+</edge>
+<edge id="32" source="21" target="10">
+<data key="weight">1.0</data>
+</edge>
+<edge id="33" source="27" target="14">
+<data key="weight">1.0</data>
+</edge>
+</graph>
+</graphml>

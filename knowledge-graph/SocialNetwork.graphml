@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key attr.name="label" attr.type="string" for="node" id="label"/>
+<key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+<key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+<key attr.name="r" attr.type="int" for="node" id="r"/>
+<key attr.name="g" attr.type="int" for="node" id="g"/>
+<key attr.name="b" attr.type="int" for="node" id="b"/>
+<key attr.name="x" attr.type="float" for="node" id="x"/>
+<key attr.name="y" attr.type="float" for="node" id="y"/>
+<key attr.name="size" attr.type="float" for="node" id="size"/>
+<key attr.name="formula" attr.type="string" for="node" id="formula"/>
+<key attr.name="description" attr.type="string" for="node" id="description"/>
+<graph edgedefault="undirected">
+<node id="11">
+<data key="label">Social Networks</data>
+<data key="size">100.0</data>
+<data key="r">189</data>
+<data key="g">189</data>
+<data key="b">189</data>
+<data key="x">219.72603</data>
+<data key="y">-338.92517</data>
+</node>
+<node id="5">
+<data key="label">Analysis</data>
+<data key="size">84.8421</data>
+<data key="r">189</data>
+<data key="g">189</data>
+<data key="b">189</data>
+<data key="x">624.77423</data>
+<data key="y">-365.10263</data>
+</node>
+<node id="17">
+<data key="label">Local Bridge</data>
+<data key="description">Edge without any traid on either side of the node.</data>
+<data key="size">80.51128</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-474.07614</data>
+<data key="y">202.56969</data>
+</node>
+<node id="19">
+<data key="label">Weak ties</data>
+<data key="description">Low Neighborhood Overlap</data>
+<data key="size">76.18045</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-494.8343</data>
+<data key="y">371.42398</data>
+</node>
+<node id="16">
+<data key="label">Properties</data>
+<data key="size">71.849625</data>
+<data key="r">189</data>
+<data key="g">189</data>
+<data key="b">189</data>
+<data key="x">-14.857443</data>
+<data key="y">-14.532231</data>
+</node>
+<node id="18">
+<data key="label">Connectedness</data>
+<data key="size">71.849625</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-430.8736</data>
+<data key="y">-140.1857</data>
+</node>
+<node id="28">
+<data key="label">Strong Ties</data>
+<data key="description">High Neighborhood Overlap -- Satisfies Strong Triadic Closure Property</data>
+<data key="size">71.849625</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-250.18948</data>
+<data key="y">418.60898</data>
+</node>
+<node id="12">
+<data key="label">Traid</data>
+<data key="formula">Probablity of Formation of Closure=1-(1-Probability of a common)^Common Friends </data>
+<data key="description">Graph where 2 nodes N1 &amp; N2 are connected by another node N3 but N1 is not directly connected to N2.</data>
+<data key="size">67.5188</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-393.34518</data>
+<data key="y">740.7125</data>
+</node>
+<node id="21">
+<data key="label">Structural holes</data>
+<data key="description">Lack of a direct contact or tie between two or more entities.  “a buffer” that enables the two contacts to “provide net- work benefits that are in some degree additive rather than overlapping”</data>
+<data key="size">67.5188</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-689.65424</data>
+<data key="y">408.7215</data>
+</node>
+<node id="10">
+<data key="label">Classification</data>
+<data key="size">63.18797</data>
+<data key="r">189</data>
+<data key="g">189</data>
+<data key="b">189</data>
+<data key="x">-152.12494</data>
+<data key="y">-307.55896</data>
+</node>
+<node id="4">
+<data key="label">Total possible edges</data>
+<data key="formula">(Nodes*(Nodes-1))/2</data>
+<data key="size">63.18797</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">774.4304</data>
+<data key="y">-1131.2483</data>
+</node>
+<node id="3">
+<data key="label">Complete Graph</data>
+<data key="description">Graph with all possible edges</data>
+<data key="size">63.18797</data>
+<data key="r">114</data>
+<data key="g">133</data>
+<data key="b">255</data>
+<data key="x">-248.6656</data>
+<data key="y">-865.69543</data>
+</node>
+<node id="6">
+<data key="label">Clustering Coefficient</data>
+<data key="formula">Number of connections for neighbors of node / Total number of connections for neighbors of node</data>
+<data key="size">63.18797</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1339.869</data>
+<data key="y">-231.67284</data>
+</node>
+<node id="9">
+<data key="label">Connected Graph</data>
+<data key="description">Graph without any isolated node.</data>
+<data key="size">63.18797</data>
+<data key="r">114</data>
+<data key="g">133</data>
+<data key="b">255</data>
+<data key="x">-500.79483</data>
+<data key="y">-550.0398</data>
+</node>
+<node id="14">
+<data key="label">Neighborhood Overlap</data>
+<data key="formula"> Common Neighbors / Total Neighbors</data>
+<data key="description">Common Neighbors between 2 nodes.</data>
+<data key="size">63.18797</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">545.30536</data>
+<data key="y">-102.618065</data>
+</node>
+<node id="20">
+<data key="label">Embeddedness</data>
+<data key="description">Closeness of neighbors of a node to a clique. Measured by calculating the local clustering coefficient.</data>
+<data key="size">63.18797</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">351.93454</data>
+<data key="y">360.4128</data>
+</node>
+<node id="22">
+<data key="label">Brokerage</data>
+<data key="size">63.18797</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-643.6363</data>
+<data key="y">242.0118</data>
+</node>
+<node id="1">
+<data key="label">Degree Distribution</data>
+<data key="description">The probability distribution of the degrees of nodes over the whole network.</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1049.7021</data>
+<data key="y">-164.32861</data>
+</node>
+<node id="2">
+<data key="label">Density</data>
+<data key="formula">Number of edges / total number of edges</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">720.63873</data>
+<data key="y">-667.1374</data>
+</node>
+<node id="8">
+<data key="label">Emergence of convergence</data>
+<data key="description">For nodes "N", the probablitity of having an isolated node after adding N*log(N) edges is (1/N)^2</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">516.2803</data>
+<data key="y">-751.71405</data>
+</node>
+<node id="13">
+<data key="label">Triadic Closure</data>
+<data key="description">When in a traid, N1 and N2 become directly connected.</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-191.03989</data>
+<data key="y">569.43243</data>
+</node>
+<node id="15">
+<data key="label">Bridge</data>
+<data key="description">Edge that connects the graph and the absence of this edge will cause the graph to be disconnected.</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-654.44464</data>
+<data key="y">-124.0722</data>
+</node>
+<node id="23">
+<data key="label">Closure</data>
+<data key="size">58.85714</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-6.7794304</data>
+<data key="y">511.63544</data>
+</node>
+<node id="0">
+<data key="label">Degree</data>
+<data key="description">The degree of a node in a network is the number of connections it has to other nodes.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1091.7933</data>
+<data key="y">70.908775</data>
+</node>
+<node id="7">
+<data key="label">Diameter</data>
+<data key="description">Maximum path in a graph</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1606.5956</data>
+<data key="y">-357.89114</data>
+</node>
+<node id="31">
+<data key="label">Betweeness Centrality</data>
+<data key="formula">Number of Shortest parth between N1 &amp; N2 via N3 / Number of Shortest parth between N1 &amp; N2</data>
+<data key="description">Calculated for a node, say N3</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1356.8948</data>
+<data key="y">-1199.9169</data>
+</node>
+<node id="40">
+<data key="label">Expected Connections</data>
+<data key="formula">1 / total number of connections</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-1056.6143</data>
+<data key="y">56.39575</data>
+</node>
+<node id="33">
+<data key="label">Social Influence</data>
+<data key="description">Edge formation due to social influcence from someone to pick up a new commonality.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-389.06168</data>
+<data key="y">1076.651</data>
+</node>
+<node id="34">
+<data key="label">Selection</data>
+<data key="description">Edge formation due to an existing commonality between the individuals.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-60.294044</data>
+<data key="y">993.37024</data>
+</node>
+<node id="35">
+<data key="label">Homophily</data>
+<data key="description">When a node has an affinity to specific type of node, it's called homophiliy. Say if there are 2 groups of people, if we see less than 1/2 relationships between the groups, we say homophily exists.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-847.4165</data>
+<data key="y">6.9812026</data>
+</node>
+<node id="36">
+<data key="label">Heterophile</data>
+<data key="description">When there are more connections amongst the group than within the group, it's called heterophile.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-916.63025</data>
+<data key="y">192.00401</data>
+</node>
+<node id="37">
+<data key="label">Edge Likeness Distribution</data>
+<data key="formula">1 - (Actual edges / Expected Edges)</data>
+<data key="description">When negative, it's heterophile, otherwise homophile.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-760.0173</data>
+<data key="y">121.85545</data>
+</node>
+<node id="38">
+<data key="label">Membership Closure</data>
+<data key="description">When a person has an interest, they tend to pull their friends towards that interest as well. When they do, a new member is added and closure is formed.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-533.81915</data>
+<data key="y">907.9122</data>
+</node>
+<node id="39">
+<data key="label">Focal Closure</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-62.593353</data>
+<data key="y">772.00574</data>
+</node>
+<node id="41">
+<data key="label">Affiliation network </data>
+<data key="description">An affiliation network is a network where the members are affiliated with one another based on co-membership in a group, or co-participation in some type of event. ... The classic example from network science is the case of corporate interlocks.</data>
+<data key="size">54.526314</data>
+<data key="r">114</data>
+<data key="g">133</data>
+<data key="b">255</data>
+<data key="x">-497.4498</data>
+<data key="y">-813.902</data>
+</node>
+<node id="42">
+<data key="label"> Schelling Graph</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">253</data>
+<data key="b">130</data>
+<data key="x">-917.8596</data>
+<data key="y">-158.0299</data>
+</node>
+<node id="43">
+<data key="label">Balance theorm</data>
+<data key="description">In stable condition, either a graph is complete graph with similar nodes or it's a bi-parte graph.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1754.1852</data>
+<data key="y">-511.7416</data>
+</node>
+<node id="46">
+<data key="label">Maximum triads</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">938.8353</data>
+<data key="y">439.11746</data>
+</node>
+<node id="45">
+<data key="label">45</data>
+<data key="size">4.0</data>
+<data key="r">153</data>
+<data key="g">153</data>
+<data key="b">153</data>
+<data key="x">-39.06824</data>
+<data key="y">208.9867</data>
+</node>
+<node id="47">
+<data key="label">Degree Rank</data>
+<data key="description">Ranking of nodes done on the basis of number of edges of the node.</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1762.3369</data>
+<data key="y">-771.9588</data>
+</node>
+<node id="48">
+<data key="label">Page Rank</data>
+<data key="description">Ranking of nodes based on their importance in the network. Not the same as in-degree ranking as proved here:  https://youtu.be/NCrOP076No4</data>
+<data key="size">54.526314</data>
+<data key="r">255</data>
+<data key="g">136</data>
+<data key="b">141</data>
+<data key="x">1533.8611</data>
+<data key="y">-996.776</data>
+</node>
+<edge id="4" source="5" target="2">
+<data key="weight">1.0</data>
+</edge>
+<edge id="1" source="2" target="4">
+<data key="weight">1.0</data>
+</edge>
+<edge id="13" source="10" target="9">
+<data key="weight">1.0</data>
+</edge>
+<edge id="3" source="1" target="0">
+<data key="weight">1.0</data>
+</edge>
+<edge id="5" source="5" target="1">
+<data key="weight">1.0</data>
+</edge>
+<edge id="12" source="10" target="3">
+<data key="weight">1.0</data>
+</edge>
+<edge id="7" source="5" target="6">
+<data key="weight">1.0</data>
+</edge>
+<edge id="8" source="6" target="4">
+<data key="weight">1.0</data>
+</edge>
+<edge id="9" source="5" target="7">
+<data key="weight">1.0</data>
+</edge>
+<edge id="10" source="5" target="8">
+<data key="weight">1.0</data>
+</edge>
+<edge id="14" source="3" target="4">
+<data key="weight">1.0</data>
+</edge>
+<edge id="15" source="11" target="10">
+<data key="weight">1.0</data>
+</edge>
+<edge id="16" source="11" target="5">
+<data key="weight">1.0</data>
+</edge>
+<edge id="17" source="9" target="8">
+<data key="weight">1.0</data>
+</edge>
+<edge id="18" source="13" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="41" source="21" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="20" source="5" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="21" source="11" target="16">
+<data key="weight">1.0</data>
+</edge>
+<edge id="22" source="16" target="18">
+<data key="weight">1.0</data>
+</edge>
+<edge id="23" source="18" target="15">
+<data key="weight">1.0</data>
+</edge>
+<edge id="24" source="9" target="18">
+<data key="weight">1.0</data>
+</edge>
+<edge id="25" source="18" target="3">
+<data key="weight">1.0</data>
+</edge>
+<edge id="26" source="17" target="18">
+<data key="weight">1.0</data>
+</edge>
+<edge id="27" source="17" target="19">
+<data key="weight">1.0</data>
+</edge>
+<edge id="28" source="19" target="17">
+<data key="weight">1.0</data>
+</edge>
+<edge id="30" source="17" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="47" source="16" target="20">
+<data key="weight">1.0</data>
+</edge>
+<edge id="50" source="28" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="33" source="19" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="34" source="17" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="35" source="22" target="17">
+<data key="weight">1.0</data>
+</edge>
+<edge id="36" source="22" target="21">
+<data key="weight">1.0</data>
+</edge>
+<edge id="37" source="13" target="23">
+<data key="weight">1.0</data>
+</edge>
+<edge id="38" source="19" target="22">
+<data key="weight">1.0</data>
+</edge>
+<edge id="39" source="23" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="49" source="6" target="20">
+<data key="weight">1.0</data>
+</edge>
+<edge id="42" source="16" target="19">
+<data key="weight">1.0</data>
+</edge>
+<edge id="43" source="16" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="44" source="28" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="45" source="17" target="15">
+<data key="weight">1.0</data>
+</edge>
+<edge id="48" source="20" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="51" source="19" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="53" source="5" target="31">
+<data key="weight">1.0</data>
+</edge>
+<edge id="66" source="40" target="36">
+<data key="weight">1.0</data>
+</edge>
+<edge id="64" source="33" target="38">
+<data key="weight">1.0</data>
+</edge>
+<edge id="65" source="34" target="39">
+<data key="weight">1.0</data>
+</edge>
+<edge id="60" source="36" target="37">
+<data key="weight">1.0</data>
+</edge>
+<edge id="59" source="35" target="37">
+<data key="weight">1.0</data>
+</edge>
+<edge id="61" source="37" target="16">
+<data key="weight">1.0</data>
+</edge>
+<edge id="62" source="38" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="63" source="39" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="67" source="40" target="35">
+<data key="weight">1.0</data>
+</edge>
+<edge id="69" source="41" target="10">
+<data key="weight">1.0</data>
+</edge>
+<edge id="70" source="42" target="35">
+<data key="weight">1.0</data>
+</edge>
+<edge id="71" source="43" target="5">
+<data key="weight">1.0</data>
+</edge>
+<edge id="72" source="46" target="5">
+<data key="weight">1.0</data>
+</edge>
+<edge id="73" source="46" target="12">
+<data key="weight">1.0</data>
+</edge>
+<edge id="74" source="48" target="5">
+<data key="weight">1.0</data>
+</edge>
+<edge id="75" source="47" target="5">
+<data key="weight">1.0</data>
+</edge>
+</graph>
+</graphml>

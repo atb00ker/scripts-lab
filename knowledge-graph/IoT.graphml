@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key attr.name="label" attr.type="string" for="node" id="label"/>
+<key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+<key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+<key attr.name="r" attr.type="int" for="node" id="r"/>
+<key attr.name="g" attr.type="int" for="node" id="g"/>
+<key attr.name="b" attr.type="int" for="node" id="b"/>
+<key attr.name="x" attr.type="float" for="node" id="x"/>
+<key attr.name="y" attr.type="float" for="node" id="y"/>
+<key attr.name="size" attr.type="float" for="node" id="size"/>
+<key attr.name="id" attr.type="string" for="node" id="d4"/>
+<key attr.name="description" attr.type="string" for="node" id="d1"/>
+<key attr.name="link" attr.type="string" for="node" id="d0"/>
+<key attr.name="id" attr.type="string" for="edge" id="d12"/>
+<graph edgedefault="undirected">
+<node id="0">
+<data key="label">Internet of Things</data>
+<data key="d4">0</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">200.0</data>
+<data key="r">243</data>
+<data key="g">232</data>
+<data key="b">255</data>
+<data key="x">-120.940186</data>
+<data key="y">-805.2042</data>
+</node>
+<node id="25">
+<data key="label">Functionality-based</data>
+<data key="d4">78</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">170.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-545.07983</data>
+<data key="y">725.209</data>
+</node>
+<node id="2">
+<data key="label">Terminology</data>
+<data key="d4">57</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">170.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">616.87756</data>
+<data key="y">-1004.8345</data>
+</node>
+<node id="30">
+<data key="label">Communication</data>
+<data key="d4">83</data>
+<data key="d1">Transportation</data>
+<data key="d0">#</data>
+<data key="size">147.5</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1926.5687</data>
+<data key="y">1087.0205</data>
+</node>
+<node id="57">
+<data key="label">Messaging</data>
+<data key="d4">124</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">140.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1256.7601</data>
+<data key="y">206.03214</data>
+</node>
+<node id="29">
+<data key="label">Identication</data>
+<data key="d4">82</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">140.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1158.7402</data>
+<data key="y">-63.086884</data>
+</node>
+<node id="8">
+<data key="label">Sensors</data>
+<data key="d4">54</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">140.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">412.81677</data>
+<data key="y">-1343.622</data>
+</node>
+<node id="32">
+<data key="label">Data Protocols</data>
+<data key="d4">85</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">132.5</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1252.5693</data>
+<data key="y">1719.867</data>
+</node>
+<node id="35">
+<data key="label">Multi-layer frameworks</data>
+<data key="d4">88</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">132.5</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-291.89862</data>
+<data key="y">1063.3065</data>
+</node>
+<node id="1">
+<data key="label">Network</data>
+<data key="d4">33</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">132.5</data>
+<data key="r">243</data>
+<data key="g">232</data>
+<data key="b">255</data>
+<data key="x">434.02454</data>
+<data key="y">-536.1853</data>
+</node>
+<node id="23">
+<data key="label">Protocols</data>
+<data key="d4">76</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">313.86115</data>
+<data key="y">170.15404</data>
+</node>
+<node id="34">
+<data key="label">Semantics</data>
+<data key="d4">87</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1304.1017</data>
+<data key="y">588.73804</data>
+</node>
+<node id="26">
+<data key="label">Connectivity</data>
+<data key="d4">79</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">469.8886</data>
+<data key="y">1061.2241</data>
+</node>
+<node id="7">
+<data key="label">Transducer</data>
+<data key="d4">53</data>
+<data key="d1">Convert enery from one kind to another</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">243</data>
+<data key="g">232</data>
+<data key="b">255</data>
+<data key="x">-7.4969726</data>
+<data key="y">-1247.052</data>
+</node>
+<node id="10">
+<data key="label">Output</data>
+<data key="d4">58</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">833.7581</data>
+<data key="y">-1816.0553</data>
+</node>
+<node id="31">
+<data key="label">Discovery</data>
+<data key="d4">84</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-532.11285</data>
+<data key="y">1820.2001</data>
+</node>
+<node id="33">
+<data key="label">Device Management</data>
+<data key="d4">86</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-454.69955</data>
+<data key="y">42.901764</data>
+</node>
+<node id="55">
+<data key="label">CoAP</data>
+<data key="d4">122</data>
+<data key="d1">(Constrained Application Protocol): Lightweight HTTP</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">863.5519</data>
+<data key="y">44.964066</data>
+</node>
+<node id="14">
+<data key="label">Data Types</data>
+<data key="d4">66</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">125.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">82.07956</data>
+<data key="y">-1997.3711</data>
+</node>
+<node id="4">
+<data key="label">IoT Proxy</data>
+<data key="d4">36</data>
+<data key="d1">Internet Access</data>
+<data key="d0">#</data>
+<data key="size">117.5</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1325.8702</data>
+<data key="y">-1294.0673</data>
+</node>
+<node id="24">
+<data key="label">Categories</data>
+<data key="d4">77</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">117.5</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-48.30206</data>
+<data key="y">377.47287</data>
+</node>
+<node id="9">
+<data key="label">Actuators</data>
+<data key="d4">55</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">117.5</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">-288.2307</data>
+<data key="y">-1406.6102</data>
+</node>
+<node id="70">
+<data key="label">Types of Sensors</data>
+<data key="d4">71</data>
+<data key="d1">https://youtu.be/jbMWEEdq3Kg?t=1032</data>
+<data key="d0">https://youtu.be/jbMWEEdq3Kg?t=1032</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">552.47955</data>
+<data key="y">-2059.0068</data>
+</node>
+<node id="71">
+<data key="label">Types of Actuators</data>
+<data key="d4">75</data>
+<data key="d1">https://youtu.be/SXz0XR68dwE?t=338</data>
+<data key="d0">https://youtu.be/SXz0XR68dwE?t=338</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">-168.47946</data>
+<data key="y">-1728.6388</data>
+</node>
+<node id="44">
+<data key="label">OMA-DM</data>
+<data key="d4">105</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-562.2246</data>
+<data key="y">-297.70474</data>
+</node>
+<node id="17">
+<data key="label">Drift</data>
+<data key="d4">70</data>
+<data key="d1">dValue / dTime</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">726.4152</data>
+<data key="y">-663.3164</data>
+</node>
+<node id="59">
+<data key="label">Piggyback</data>
+<data key="d4">126</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1401.2426</data>
+<data key="y">802.852</data>
+</node>
+<node id="16">
+<data key="label">Vector</data>
+<data key="d4">68</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">237.0824</data>
+<data key="y">-2374.628</data>
+</node>
+<node id="60">
+<data key="label">Non-confirmable</data>
+<data key="d4">127</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1734.5481</data>
+<data key="y">364.02133</data>
+</node>
+<node id="50">
+<data key="label">Websocket</data>
+<data key="d4">116</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1217.8907</data>
+<data key="y">2051.2183</data>
+</node>
+<node id="58">
+<data key="label">Seperate</data>
+<data key="d4">125</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1660.0529</data>
+<data key="y">668.4295</data>
+</node>
+<node id="5">
+<data key="label">IKEv2</data>
+<data key="d4">37</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1600.8246</data>
+<data key="y">-1215.5574</data>
+</node>
+<node id="51">
+<data key="label">mDNS</data>
+<data key="d4">117</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-201.66275</data>
+<data key="y">2037.8031</data>
+</node>
+<node id="11">
+<data key="label">Resolution</data>
+<data key="d4">61</data>
+<data key="d1">Smallest detectable change</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">703.66974</data>
+<data key="y">-1410.2916</data>
+</node>
+<node id="54">
+<data key="label">Web Thing Model</data>
+<data key="d4">121</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1570.3407</data>
+<data key="y">488.05945</data>
+</node>
+<node id="12">
+<data key="label">Digital</data>
+<data key="d4">64</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">1213.3485</data>
+<data key="y">-1833.4883</data>
+</node>
+<node id="15">
+<data key="label">Scalar</data>
+<data key="d4">67</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">-184.02283</data>
+<data key="y">-2263.8245</data>
+</node>
+<node id="39">
+<data key="label">URIs</data>
+<data key="d4">92</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-995.631</data>
+<data key="y">-337.73615</data>
+</node>
+<node id="6">
+<data key="label">Multi-homing</data>
+<data key="d4">46</data>
+<data key="d1">Multiple connections for reliability</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">112.18349</data>
+<data key="y">-364.3235</data>
+</node>
+<node id="45">
+<data key="label">WiFi</data>
+<data key="d4">111</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1609.8113</data>
+<data key="y">1380.0768</data>
+</node>
+<node id="56">
+<data key="label">Request/Response (UDP)</data>
+<data key="d4">123</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1287.6062</data>
+<data key="y">-217.87408</data>
+</node>
+<node id="61">
+<data key="label">Confirmable</data>
+<data key="d4">128</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">1569.2118</data>
+<data key="y">61.43535</data>
+</node>
+<node id="63">
+<data key="label">Zigbee</data>
+<data key="d4">131</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-2238.538</data>
+<data key="y">801.8623</data>
+</node>
+<node id="27">
+<data key="label">6LowPAN</data>
+<data key="d4">80</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">845.1389</data>
+<data key="y">1052.2722</data>
+</node>
+<node id="62">
+<data key="label">WPAN</data>
+<data key="d4">130</data>
+<data key="d1">(802.15.4) L1/L2</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-2332.8982</data>
+<data key="y">1301.0479</data>
+</node>
+<node id="41">
+<data key="label">Wave</data>
+<data key="d4">98</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-330.8125</data>
+<data key="y">1376.5106</data>
+</node>
+<node id="40">
+<data key="label">Alljoyn</data>
+<data key="d4">97</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">114.37125</data>
+<data key="y">1152.6274</data>
+</node>
+<node id="49">
+<data key="label">AMQP</data>
+<data key="d4">115</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1520.8157</data>
+<data key="y">1947.3859</data>
+</node>
+<node id="37">
+<data key="label">uCode</data>
+<data key="d4">90</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1372.0009</data>
+<data key="y">158.77727</data>
+</node>
+<node id="52">
+<data key="label">DNS-SD</data>
+<data key="d4">118</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-526.94977</data>
+<data key="y">2142.8608</data>
+</node>
+<node id="38">
+<data key="label">IPv6</data>
+<data key="d4">91</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1507.3347</data>
+<data key="y">-114.378494</data>
+</node>
+<node id="13">
+<data key="label">Analog</data>
+<data key="d4">65</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">239</data>
+<data key="b">154</data>
+<data key="x">1031.203</data>
+<data key="y">-2134.8345</data>
+</node>
+<node id="47">
+<data key="label">Bluetooth</data>
+<data key="d4">113</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-2342.6472</data>
+<data key="y">1046.4922</data>
+</node>
+<node id="3">
+<data key="label">IoT Gateway</data>
+<data key="d4">35</data>
+<data key="d1">Router equivalant in IoT, connects different types of networks</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1067.0903</data>
+<data key="y">-1503.5442</data>
+</node>
+<node id="20">
+<data key="label">Quantiziation Error</data>
+<data key="d4">73</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1412.9662</data>
+<data key="y">-695.32404</data>
+</node>
+<node id="19">
+<data key="label">Hyterisis Error</data>
+<data key="d4">72</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1119.9875</data>
+<data key="y">-515.38214</data>
+</node>
+<node id="43">
+<data key="label">TR-069</data>
+<data key="d4">104</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-251.82106</data>
+<data key="y">-251.6745</data>
+</node>
+<node id="46">
+<data key="label">LPWAN</data>
+<data key="d4">112</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1843.9691</data>
+<data key="y">1476.2839</data>
+</node>
+<node id="48">
+<data key="label">MQTT</data>
+<data key="d4">114</data>
+<data key="d1">Message Queue Telementory Transport</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-880.3664</data>
+<data key="y">1889.8136</data>
+</node>
+<node id="53">
+<data key="label">JSON-LD</data>
+<data key="d4">120</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1522.1437</data>
+<data key="y">777.5404</data>
+</node>
+<node id="42">
+<data key="label">HomeKit</data>
+<data key="d4">102</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-69.83049</data>
+<data key="y">1329.7449</data>
+</node>
+<node id="28">
+<data key="label">RPL</data>
+<data key="d4">81</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">592.51746</data>
+<data key="y">1352.95</data>
+</node>
+<node id="21">
+<data key="label">Aliasing Error</data>
+<data key="d4">74</data>
+<data key="d1">Sampling</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">87</data>
+<data key="b">93</data>
+<data key="x">1336.4653</data>
+<data key="y">-942.5153</data>
+</node>
+<node id="36">
+<data key="label">EPC</data>
+<data key="d4">89</data>
+<data key="d1">#</data>
+<data key="d0">#</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1316.3945</data>
+<data key="y">-357.0813</data>
+</node>
+<node id="72">
+<data key="label">HART</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-2115.078</data>
+<data key="y">1461.2122</data>
+</node>
+<node id="73">
+<data key="label">Z-wave</data>
+<data key="d1">Used in home automation</data>
+<data key="size">110.0</data>
+<data key="r">154</data>
+<data key="g">255</data>
+<data key="b">110</data>
+<data key="x">-1996.9121</data>
+<data key="y">708.2822</data>
+</node>
+<edge id="128" source="4" target="2">
+<data key="weight">1.0</data>
+<data key="d12">6</data>
+</edge>
+<edge id="129" source="4" target="5">
+<data key="weight">1.0</data>
+<data key="d12">13</data>
+</edge>
+<edge id="130" source="70" target="8">
+<data key="weight">1.0</data>
+<data key="d12">18</data>
+</edge>
+<edge id="131" source="71" target="9">
+<data key="weight">1.0</data>
+<data key="d12">19</data>
+</edge>
+<edge id="132" source="23" target="24">
+<data key="weight">1.0</data>
+<data key="d12">24</data>
+</edge>
+<edge id="133" source="23" target="1">
+<data key="weight">1.0</data>
+<data key="d12">4</data>
+</edge>
+<edge id="134" source="23" target="55">
+<data key="weight">1.0</data>
+<data key="d12">25</data>
+</edge>
+<edge id="135" source="44" target="33">
+<data key="weight">1.0</data>
+<data key="d12">52</data>
+</edge>
+<edge id="136" source="17" target="2">
+<data key="weight">1.0</data>
+<data key="d12">9</data>
+</edge>
+<edge id="137" source="59" target="57">
+<data key="weight">1.0</data>
+<data key="d12">61</data>
+</edge>
+<edge id="138" source="16" target="14">
+<data key="weight">1.0</data>
+<data key="d12">23</data>
+</edge>
+<edge id="139" source="60" target="57">
+<data key="weight">1.0</data>
+<data key="d12">62</data>
+</edge>
+<edge id="140" source="50" target="32">
+<data key="weight">1.0</data>
+<data key="d12">50</data>
+</edge>
+<edge id="141" source="57" target="58">
+<data key="weight">1.0</data>
+<data key="d12">60</data>
+</edge>
+<edge id="142" source="57" target="61">
+<data key="weight">1.0</data>
+<data key="d12">63</data>
+</edge>
+<edge id="143" source="57" target="55">
+<data key="weight">1.0</data>
+<data key="d12">59</data>
+</edge>
+<edge id="144" source="0" target="7">
+<data key="weight">1.0</data>
+<data key="d12">1</data>
+</edge>
+<edge id="145" source="0" target="1">
+<data key="weight">1.0</data>
+<data key="d12">0</data>
+</edge>
+<edge id="146" source="29" target="39">
+<data key="weight">1.0</data>
+<data key="d12">40</data>
+</edge>
+<edge id="147" source="29" target="25">
+<data key="weight">1.0</data>
+<data key="d12">28</data>
+</edge>
+<edge id="148" source="29" target="37">
+<data key="weight">1.0</data>
+<data key="d12">38</data>
+</edge>
+<edge id="149" source="29" target="38">
+<data key="weight">1.0</data>
+<data key="d12">39</data>
+</edge>
+<edge id="150" source="29" target="36">
+<data key="weight">1.0</data>
+<data key="d12">37</data>
+</edge>
+<edge id="151" source="2" target="11">
+<data key="weight">1.0</data>
+<data key="d12">8</data>
+</edge>
+<edge id="152" source="2" target="8">
+<data key="weight">1.0</data>
+<data key="d12">7</data>
+</edge>
+<edge id="153" source="2" target="3">
+<data key="weight">1.0</data>
+<data key="d12">5</data>
+</edge>
+<edge id="154" source="2" target="20">
+<data key="weight">1.0</data>
+<data key="d12">11</data>
+</edge>
+<edge id="155" source="2" target="1">
+<data key="weight">1.0</data>
+<data key="d12">2</data>
+</edge>
+<edge id="156" source="2" target="19">
+<data key="weight">1.0</data>
+<data key="d12">10</data>
+</edge>
+<edge id="157" source="2" target="21">
+<data key="weight">1.0</data>
+<data key="d12">12</data>
+</edge>
+<edge id="158" source="51" target="31">
+<data key="weight">1.0</data>
+<data key="d12">46</data>
+</edge>
+<edge id="159" source="54" target="34">
+<data key="weight">1.0</data>
+<data key="d12">54</data>
+</edge>
+<edge id="160" source="12" target="10">
+<data key="weight">1.0</data>
+<data key="d12">20</data>
+</edge>
+<edge id="161" source="15" target="14">
+<data key="weight">1.0</data>
+<data key="d12">22</data>
+</edge>
+<edge id="162" source="34" target="25">
+<data key="weight">1.0</data>
+<data key="d12">33</data>
+</edge>
+<edge id="163" source="34" target="53">
+<data key="weight">1.0</data>
+<data key="d12">53</data>
+</edge>
+<edge id="164" source="30" target="45">
+<data key="weight">1.0</data>
+<data key="d12">41</data>
+</edge>
+<edge id="165" source="30" target="63">
+<data key="weight">1.0</data>
+<data key="d12">45</data>
+</edge>
+<edge id="166" source="30" target="62">
+<data key="weight">1.0</data>
+<data key="d12">44</data>
+</edge>
+<edge id="167" source="30" target="25">
+<data key="weight">1.0</data>
+<data key="d12">29</data>
+</edge>
+<edge id="168" source="30" target="47">
+<data key="weight">1.0</data>
+<data key="d12">43</data>
+</edge>
+<edge id="169" source="30" target="46">
+<data key="weight">1.0</data>
+<data key="d12">42</data>
+</edge>
+<edge id="170" source="6" target="1">
+<data key="weight">1.0</data>
+<data key="d12">3</data>
+</edge>
+<edge id="171" source="56" target="55">
+<data key="weight">1.0</data>
+<data key="d12">58</data>
+</edge>
+<edge id="172" source="27" target="26">
+<data key="weight">1.0</data>
+<data key="d12">35</data>
+</edge>
+<edge id="173" source="41" target="35">
+<data key="weight">1.0</data>
+<data key="d12">56</data>
+</edge>
+<edge id="174" source="25" target="26">
+<data key="weight">1.0</data>
+<data key="d12">27</data>
+</edge>
+<edge id="175" source="25" target="32">
+<data key="weight">1.0</data>
+<data key="d12">31</data>
+</edge>
+<edge id="176" source="25" target="24">
+<data key="weight">1.0</data>
+<data key="d12">26</data>
+</edge>
+<edge id="177" source="25" target="35">
+<data key="weight">1.0</data>
+<data key="d12">34</data>
+</edge>
+<edge id="178" source="25" target="31">
+<data key="weight">1.0</data>
+<data key="d12">30</data>
+</edge>
+<edge id="179" source="25" target="33">
+<data key="weight">1.0</data>
+<data key="d12">32</data>
+</edge>
+<edge id="180" source="26" target="28">
+<data key="weight">1.0</data>
+<data key="d12">36</data>
+</edge>
+<edge id="181" source="40" target="35">
+<data key="weight">1.0</data>
+<data key="d12">55</data>
+</edge>
+<edge id="182" source="49" target="32">
+<data key="weight">1.0</data>
+<data key="d12">49</data>
+</edge>
+<edge id="183" source="32" target="48">
+<data key="weight">1.0</data>
+<data key="d12">48</data>
+</edge>
+<edge id="184" source="7" target="8">
+<data key="weight">1.0</data>
+<data key="d12">14</data>
+</edge>
+<edge id="185" source="7" target="9">
+<data key="weight">1.0</data>
+<data key="d12">15</data>
+</edge>
+<edge id="186" source="52" target="31">
+<data key="weight">1.0</data>
+<data key="d12">47</data>
+</edge>
+<edge id="187" source="35" target="42">
+<data key="weight">1.0</data>
+<data key="d12">57</data>
+</edge>
+<edge id="188" source="8" target="10">
+<data key="weight">1.0</data>
+<data key="d12">16</data>
+</edge>
+<edge id="189" source="8" target="14">
+<data key="weight">1.0</data>
+<data key="d12">17</data>
+</edge>
+<edge id="190" source="13" target="10">
+<data key="weight">1.0</data>
+<data key="d12">21</data>
+</edge>
+<edge id="191" source="43" target="33">
+<data key="weight">1.0</data>
+<data key="d12">51</data>
+</edge>
+<edge id="194" source="73" target="30">
+<data key="weight">1.0</data>
+</edge>
+<edge id="193" source="72" target="30">
+<data key="weight">1.0</data>
+</edge>
+</graph>
+</graphml>
