@@ -2,10 +2,19 @@ function General:toString()
     local generalObjectFormat = [[
     {
         "local_time": %d,
-        "uptime": %d
+        "uptime": %s
     }]]
     local general = string.format(generalObjectFormat, self.local_time, self.uptime)
     return general
+end
+
+function Resources:toString()
+    local resourceObjectFormat = [[
+    {
+        "load": [%s, %s, %s]
+    }]]
+    local resource = string.format(resourceObjectFormat, self.loadavg[1], self.loadavg[2], self.loadavg[3])
+    return resource
 end
 
 function Interface:toString()
@@ -78,7 +87,7 @@ function DeviceConfig:toString()
         "type": "DeviceMonitoring",
         "general": %s,
         "interfaces": %s,
-        "resources": "%s"
+        "resources": %s
     }]]
     local deviceInterfaces = "[" .. table.concat(DeviceConfig.interfaces, ", ") .. "]"
     local deviceGeneral = table.concat(DeviceConfig.general, ", ")

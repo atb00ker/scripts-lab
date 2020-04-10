@@ -1,11 +1,11 @@
 --[[
   Collect Interface object on a device
   Note: Some objects are fetched by UCI.
-  uptime is fetched from /proc/uptime
+  loadavg, uptime are fetched from /proc/
   interface's uptime is fetched from /sbin/ifstatus
   statistics are fetched from /sys/class/net/lo/statistics/
-
 ]]
+
 uci = require("uci")
 json = require("json")
 os = require("os")
@@ -19,6 +19,11 @@ function General:new(local_time, uptime)
     setmetatable({}, General)
     self.local_time = local_time or -1
     self.uptime = uptime or -1
+    return self
+end
+function Resources:new(loadavg)
+    setmetatable({}, Resources)
+    self.loadavg = loadavg or {-1, -1, -1}
     return self
 end
 
@@ -101,12 +106,40 @@ end
 function get_uptime()
     local file = io.open("/proc/uptime", "r")
     if file ~= nil then
-        content = split(file:read(), ".")
+        content = split(file:read(), " ")
         io.close(file)
         return content[1]
     else
         return -1
     end
+end
+
+function get_loadavg()
+    local file = io.open("/proc/loadavg", "r")
+    if file ~= nil then
+        content = split(file:read(), " ")
+        io.close(file)
+        return content
+    else
+        return -1
+    end
+end
+
+-- Print contents of `tbl`, with indentation.
+-- `indent` sets the initial level of indentation.
+function tprint (tbl, indent)
+  if not indent then indent = 0 end
+  for k, v in pairs(tbl) do
+    formatting = string.rep("  ", indent) .. k .. ": "
+    if type(v) == "table" then
+      print(formatting)
+      tprint(v, indent+1)
+    elseif type(v) == 'boolean' then
+      print(formatting .. tostring(v))
+    else
+      print(formatting .. v)
+    end
+  end
 end
 
 function main()
@@ -115,6 +148,12 @@ function main()
     uptime = get_uptime()
     objGeneral = General:new(local_time, uptime):toString()
     table.insert(DeviceConfig["general"], objGeneral)
+    -- Resource
+    loadavg = get_loadavg()
+    objResources = Resources:new(loadavg):toString()
+    -- print(objResources)
+    -- tprint(loadavg)
+    table.insert(DeviceConfig["resources"], objResources)
     -- Interface
     ucursor:foreach(
         "network",

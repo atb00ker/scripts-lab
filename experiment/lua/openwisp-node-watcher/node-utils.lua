@@ -39,6 +39,10 @@ Interface = {
     }
 }
 
+Resources = {
+  loadavg = {-1 , -1, -1}
+}
+
 function split(str, delim)
     local t = {}
 

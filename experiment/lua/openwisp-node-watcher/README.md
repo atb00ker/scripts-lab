@@ -1,5 +1,6 @@
 # Simple RPCD Test for OpenWISP Project
 
+
 Prerequiste:
 - Access to OpenWRT device with Lua installed
 
@@ -10,6 +11,8 @@ Step 2. Setup rpcd to get response for ubus:
 - Copy `node` file in the router's `/usr/libexec/rpcd` directory (create directory if it's not present.)
 - Make `node` file executable: `chmod +x /usr/libexec/rpcd/node`
 - Restart rpcd: `/etc/init.d/rpcd restart`
+
+Note: (luci_app_statistics)[https://openwrt.org/docs/guide-user/luci/luci_app_statistics] **might** be required for resources block.
 
 That's it!
 
