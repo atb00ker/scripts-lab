@@ -18,8 +18,8 @@
 <data key="r">255</data>
 <data key="g">255</data>
 <data key="b">255</data>
-<data key="x">220.17664</data>
-<data key="y">-73.24527</data>
+<data key="x">136.1729</data>
+<data key="y">-272.07993</data>
 </node>
 <node id="15">
 <data key="label">Time-based availability</data>
@@ -28,8 +28,8 @@
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">992.0918</data>
-<data key="y">-295.33743</data>
+<data key="x">825.3301</data>
+<data key="y">-609.2479</data>
 </node>
 <node id="16">
 <data key="label">Aggregate availability</data>
@@ -38,8 +38,8 @@
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">1306.2062</data>
-<data key="y">-82.55124</data>
+<data key="x">1177.3501</data>
+<data key="y">-572.78625</data>
 </node>
 <node id="17">
 <data key="label">Relevant Questions</data>
@@ -48,14 +48,13 @@
 3. Is this a paid service, or is it free?
 4. If there are competitors in the marketplace, what level of service do those competitors provide?
 5. Is this service targeted at consumers, or at enterprises?
-6. Does it take a lot of effort to calculate the value of the SLO that matters to user? If yes, can there be an easier proxy?
-</data>
+6. Does it take a lot of effort to calculate the value of the SLO that matters to user? If yes, can there be an easier proxy?</data>
 <data key="size">110.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-223.10251</data>
-<data key="y">1056.4467</data>
+<data key="x">-437.14972</data>
+<data key="y">598.5754</data>
 </node>
 <node id="18">
 <data key="label">Increasing Availability</data>
@@ -67,8 +66,8 @@
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">160.54909</data>
-<data key="y">1139.229</data>
+<data key="x">-75.517586</data>
+<data key="y">603.3744</data>
 </node>
 <node id="19">
 <data key="label">Service tiers</data>
@@ -78,176 +77,58 @@ In such a case optimisation can be done by providing different tiers of services
 Example, Cloud Spanner provides immediate convergance and at an increased cost while big table provides eventual convergence at a decreased cost.
 
 </data>
-<data key="size">110.0</data>
+<data key="size">125.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">371.71198</data>
-<data key="y">926.50165</data>
-</node>
-<node id="1">
-<data key="label">Monitoring</data>
-<data key="description">#</data>
-<data key="size">100.0</data>
-<data key="r">255</data>
-<data key="g">241</data>
-<data key="b">157</data>
-<data key="x">-125.86246</data>
-<data key="y">-533.3992</data>
-</node>
-<node id="2">
-<data key="label">Ops Quota</data>
-<data key="description">Limit of time SRE are allowed to spend on operations work. (example 50% / month)</data>
-<data key="size">100.0</data>
-<data key="r">174</data>
-<data key="g">192</data>
-<data key="b">255</data>
-<data key="x">1127.1702</data>
-<data key="y">264.1853</data>
-</node>
-<node id="3">
-<data key="label">Postmortem</data>
-<data key="description">Blame-free search for the core reason of an error</data>
-<data key="size">100.0</data>
-<data key="r">174</data>
-<data key="g">192</data>
-<data key="b">255</data>
-<data key="x">982.9899</data>
-<data key="y">476.52078</data>
-</node>
-<node id="4">
-<data key="label">Error budget</data>
-<data key="description">Maximum allowed service downtime (Example: 0.1% / Month)
-The core principle is that 100% reliablity is not required or needed as customer cannot notice it.</data>
-<data key="size">100.0</data>
-<data key="r">174</data>
-<data key="g">192</data>
-<data key="b">255</data>
-<data key="x">1002.5833</data>
-<data key="y">35.313908</data>
-</node>
-<node id="5">
-<data key="label">Alerts</data>
-<data key="description">Signify that a human needs to take action immediately in response to something that is either happening or about to happen, in order to improve the situation.</data>
-<data key="size">100.0</data>
-<data key="r">255</data>
-<data key="g">241</data>
-<data key="b">157</data>
-<data key="x">-501.71005</data>
-<data key="y">-548.1344</data>
-</node>
-<node id="6">
-<data key="label">Tickets</data>
-<data key="description">Signify that a human needs to take action, but not immediately. The system cannot automatically handle the situation, but if a human takes action in a few days, no damage will result.</data>
-<data key="size">100.0</data>
-<data key="r">255</data>
-<data key="g">241</data>
-<data key="b">157</data>
-<data key="x">-292.09668</data>
-<data key="y">-741.371</data>
-</node>
-<node id="7">
-<data key="label">Logging</data>
-<data key="description">No one needs to look at this information, but it is recorded for diagnostic or forensic purposes. The expectation is that no one reads logs unless something else prompts them to do so.</data>
-<data key="size">100.0</data>
-<data key="r">255</data>
-<data key="g">241</data>
-<data key="b">157</data>
-<data key="x">-43.3199</data>
-<data key="y">-827.8274</data>
-</node>
-<node id="8">
-<data key="label">Capacity Planning</data>
-<data key="description">Estimate of requirement of resources according to organic(users) and inorganic(new users / new feature) expections from system.</data>
-<data key="size">100.0</data>
-<data key="r">178</data>
-<data key="g">251</data>
-<data key="b">255</data>
-<data key="x">-96.46261</data>
-<data key="y">370.02945</data>
-</node>
-<node id="9">
-<data key="label">Service Level Objective</data>
-<data key="description">&lt;null value&gt;</data>
-<data key="size">100.0</data>
-<data key="r">178</data>
-<data key="g">251</data>
-<data key="b">255</data>
-<data key="x">-57.81797</data>
-<data key="y">721.8955</data>
-</node>
-<node id="10">
-<data key="label">Service Level Indicator</data>
-<data key="size">100.0</data>
-<data key="r">178</data>
-<data key="g">251</data>
-<data key="b">255</data>
-<data key="x">-499.62973</data>
-<data key="y">791.60834</data>
-</node>
-<node id="11">
-<data key="label">Service Level Agreement</data>
-<data key="size">100.0</data>
-<data key="r">178</data>
-<data key="g">251</data>
-<data key="b">255</data>
-<data key="x">-544.6802</data>
-<data key="y">470.70084</data>
-</node>
-<node id="14">
-<data key="label">Principal</data>
-<data key="size">100.0</data>
-<data key="r">174</data>
-<data key="g">192</data>
-<data key="b">255</data>
-<data key="x">777.5956</data>
-<data key="y">169.23035</data>
+<data key="x">20.250687</data>
+<data key="y">337.7624</data>
 </node>
 <node id="20">
 <data key="label">Availability</data>
 <data key="description">&lt;null value&gt;</data>
-<data key="size">110.0</data>
+<data key="size">125.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-1015.70264</data>
-<data key="y">1509.0237</data>
+<data key="x">-1738.1925</data>
+<data key="y">1089.4551</data>
 </node>
 <node id="21">
 <data key="label">User-facing Service</data>
-<data key="size">110.0</data>
+<data key="size">155.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-571.09973</data>
-<data key="y">1215.741</data>
+<data key="x">-1509.2871</data>
+<data key="y">732.33276</data>
 </node>
 <node id="22">
 <data key="label">latency</data>
-<data key="size">110.0</data>
+<data key="size">140.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-1321.3857</data>
-<data key="y">1400.0537</data>
+<data key="x">-2404.7588</data>
+<data key="y">700.3579</data>
 </node>
 <node id="23">
 <data key="label">throughput</data>
-<data key="size">110.0</data>
+<data key="size">125.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-636.9868</data>
-<data key="y">1576.9674</data>
+<data key="x">-2104.7078</data>
+<data key="y">933.8286</data>
 </node>
 <node id="24">
 <data key="label">Storage Services</data>
-<data key="size">110.0</data>
+<data key="size">155.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-1031.5875</data>
-<data key="y">930.2899</data>
+<data key="x">-2273.224</data>
+<data key="y">-71.2692</data>
 </node>
 <node id="25">
 <data key="label">Durability</data>
@@ -255,17 +136,17 @@ The core principle is that 100% reliablity is not required or needed as customer
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-1564.2389</data>
-<data key="y">1252.2462</data>
+<data key="x">-2624.6519</data>
+<data key="y">408.94608</data>
 </node>
 <node id="26">
 <data key="label">Big data Service</data>
-<data key="size">110.0</data>
+<data key="size">140.0</data>
 <data key="r">255</data>
 <data key="g">146</data>
 <data key="b">155</data>
-<data key="x">-803.46173</data>
-<data key="y">1081.9006</data>
+<data key="x">-1828.4246</data>
+<data key="y">345.3279</data>
 </node>
 <node id="27">
 <data key="label">Toil</data>
@@ -274,8 +155,180 @@ The core principle is that 100% reliablity is not required or needed as customer
 <data key="r">174</data>
 <data key="g">192</data>
 <data key="b">255</data>
-<data key="x">736.63116</data>
-<data key="y">547.2671</data>
+<data key="x">855.01025</data>
+<data key="y">377.9223</data>
+</node>
+<node id="1">
+<data key="label">Monitoring</data>
+<data key="description">1. Does this rule detect an otherwise undetected condition that is urgent, actionable, and actively or imminently user-visible?
+2. Will I ever be able to ignore this alert, knowing it’s benign?
+3. Does this alert definitely indicate that users are being negatively affected? </data>
+<data key="size">155.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-361.12753</data>
+<data key="y">-748.6699</data>
+</node>
+<node id="2">
+<data key="label">Ops Quota</data>
+<data key="description">Limit of time SRE are allowed to spend on operations work. (example 50% / month)</data>
+<data key="size">110.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">1264.6678</data>
+<data key="y">33.814415</data>
+</node>
+<node id="3">
+<data key="label">Postmortem</data>
+<data key="description">Blame-free search for the core reason of an error</data>
+<data key="size">110.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">1114.4044</data>
+<data key="y">296.45087</data>
+</node>
+<node id="4">
+<data key="label">Error budget</data>
+<data key="description">Maximum allowed service downtime (Example: 0.1% / Month)
+The core principle is that 100% reliablity is not required or needed as customer cannot notice it.</data>
+<data key="size">140.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">1231.416</data>
+<data key="y">-250.71333</data>
+</node>
+<node id="5">
+<data key="label">Alerts</data>
+<data key="description">Signify that a human needs to take action immediately in response to something that is either happening or about to happen, in order to improve the situation.
+
+1. Every time the pager goes off, I should be able to react with a sense of urgency. 
+2. Every page should be actionable.
+3. Every page response should require intelligence.
+4. Pages should be about a novel problem or an event that hasn’t been seen before.</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">56.544403</data>
+<data key="y">-1436.4827</data>
+</node>
+<node id="6">
+<data key="label">Tickets</data>
+<data key="description">Signify that a human needs to take action, but not immediately. The system cannot automatically handle the situation, but if a human takes action in a few days, no damage will result.</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-562.9786</data>
+<data key="y">-1429.1622</data>
+</node>
+<node id="7">
+<data key="label">Logging</data>
+<data key="description">No one needs to look at this information, but it is recorded for diagnostic or forensic purposes. The expectation is that no one reads logs unless something else prompts them to do so.</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-298.80756</data>
+<data key="y">-1446.4585</data>
+</node>
+<node id="8">
+<data key="label">Capacity Planning</data>
+<data key="description">Estimate of requirement of resources according to organic(users) and inorganic(new users / new feature) expections from system.</data>
+<data key="size">155.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-967.49457</data>
+<data key="y">-15.987247</data>
+</node>
+<node id="9">
+<data key="label">Service Level Objective</data>
+<data key="description">&lt;null value&gt;</data>
+<data key="size">170.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-431.84225</data>
+<data key="y">257.72003</data>
+</node>
+<node id="10">
+<data key="label">Service Level Indicator</data>
+<data key="size">155.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-1365.0461</data>
+<data key="y">-129.44624</data>
+</node>
+<node id="11">
+<data key="label">Service Level Agreement</data>
+<data key="size">110.0</data>
+<data key="r">178</data>
+<data key="g">251</data>
+<data key="b">255</data>
+<data key="x">-1056.836</data>
+<data key="y">363.52722</data>
+</node>
+<node id="14">
+<data key="label">Principal</data>
+<data key="size">170.0</data>
+<data key="r">174</data>
+<data key="g">192</data>
+<data key="b">255</data>
+<data key="x">790.85114</data>
+<data key="y">-39.711075</data>
+</node>
+<node id="28">
+<data key="label">The golden Signals</data>
+<data key="description"> If you can only measure four metrics of your user-facing system, focus on these four.</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-976.2545</data>
+<data key="y">-694.2196</data>
+</node>
+<node id="29">
+<data key="label">Latency</data>
+<data key="description">Latency of **successful** requests.</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-1670.33</data>
+<data key="y">-637.62195</data>
+</node>
+<node id="30">
+<data key="label">Traffic</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-1567.1058</data>
+<data key="y">-901.391</data>
+</node>
+<node id="31">
+<data key="label">Errors</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-1415.1365</data>
+<data key="y">-1076.2758</data>
+</node>
+<node id="32">
+<data key="label">Saturation</data>
+<data key="size">110.0</data>
+<data key="r">255</data>
+<data key="g">241</data>
+<data key="b">157</data>
+<data key="x">-1205.8203</data>
+<data key="y">-1302.7515</data>
 </node>
 <edge id="0" source="1" target="0">
 <data key="weight">1.0</data>
@@ -365,6 +418,21 @@ The core principle is that 100% reliablity is not required or needed as customer
 <data key="weight">1.0</data>
 </edge>
 <edge id="33" source="27" target="14">
+<data key="weight">1.0</data>
+</edge>
+<edge id="36" source="28" target="1">
+<data key="weight">1.0</data>
+</edge>
+<edge id="44" source="32" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="43" source="31" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="42" source="30" target="28">
+<data key="weight">1.0</data>
+</edge>
+<edge id="41" source="29" target="28">
 <data key="weight">1.0</data>
 </edge>
 </graph>
