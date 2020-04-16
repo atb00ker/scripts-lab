@@ -1,0 +1,32 @@
+@model Todo
+@{
+    ViewData["Title"] = "Crud Actions";
+}
+
+<h1>List of Tasks</h1>
+<table>
+    <thead>
+        <tr>
+            <td> Name </td>
+            <td> Completed </td>
+            <td> Delete </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in ViewBag.TodoVal)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td><a asp-action="Crud" asp-route-id="@item.Id" asp-route-update="true">@item.IsComplete</a></td>
+            <td><a asp-action="Crud" asp-route-id="@item.Id" asp-route-delete="true">Delete</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<div asp-validation-summary="All"></div>
+<form asp-controller="home" asp-action="crud" method="post">
+    <input asp-for="Name" type="text" placeholder="Task">
+    <span asp-validation-for="Name"></span>
+    <button type="submit">Submit</button>
+</form>
