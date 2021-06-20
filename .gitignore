@@ -1,14 +1,20 @@
-local/
-.vscode/
-.vagrant/
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.backup
 *.out
+
+#Others
 media/
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# Angular
-node_modules/
+local/
+.vagrant/
