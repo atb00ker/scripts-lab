@@ -13,6 +13,7 @@ __pycache__/
 *.tfstate
 *.tfstate.backup
 *.out
+*.db
 
 #Others
 media/
